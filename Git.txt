@@ -1,0 +1,94 @@
+Print Working Directory:
+- pwd
+
+How to add current folder in repository:
+- git init
+- git add
+- git commit
+
+
+ls => To show folder list
+ls -la => Shows all hidden files
+git add . => To add all files... Here dot means it add all files
+git add firstFile.txt  => It will add only firstFile.txt file
+
+Working directory > Staging area > repository
+Working directory = When we create file. It store only in local directory/working directory
+Staging are = When you add file by using git command. It will add in staging area. And if it is in staging area it mean it is not keeping version of this file.
+Repository = When you commit file. It will go in repository. Git will keep track of it.
+
+git commit -m "This is first commit"   => Commit the changes, Here -m is for adding msg
+git log  => Shows history of commit
+git log --authod="sagar"  => Shows log of Sagar user, Here we can type author name as sub string of author name no need exat name
+clear  => To clear the console
+git status  => Gives us the status of local repository.. Ex. 1. New file added, If edited existing file.. etc
+
+Note: If we edit a file again we need to add it to staging area and than commit it.
+
+We can commit all files in repository directly without need of adding in staging. Check below command:
+- git commit -am "msg"  => Avoid to use this command.
+
+https://www.youtube.com/watch?v=S-VirDyRXbA&list=PL6gx4Cwl9DGAKWClAD_iKpNC0bGHxGhcx&index=8
+
+- git diff  => Shows diffrence of local and repository
+
+IMP: When we add edited file in staging area and if we try to find the diffrence between working copy n repository it will show no diffrences.
+Please use below command for above case:
+- git diff --staged   => It shows diffrence between staging files and repository files
+
+- git rm third.txt  => To delete file from working copy and repository as well, Need to commit after delete
+
+-----------------------------------
+Renaming files:
+1. (Difficult way)
+- Rename file name in working copy(oldFileName to NewFileName)
+- git add newFileName.txt
+- git rm oldFileName.txt
+- git status
+- git commit
+
+2. (Easy way)
+- git mv oldFileName.txt newFileName.txt
+Here, mv means move... In git moving a file is same as renaming file.
+
+
+Moving files into another folder
+- git mv filename.txt folderName/
+- git mv filename.txt folderName/newFilaName.txt   (Move and renaming file)
+------------------------------------
+- git checkout -- filename.txt  => To copy repository file into working directory
+
+Removing file from staging area and sending back to working area:
+- git reset HEAD first.html
+
+How to get old version of file from repository:
+- git log  => See log ang copy revision id or unique id of commit/revision
+- git checkout revison_id_of_commit -- first.html
+- git status
+- git commit 
+
+
+------------------------------------------------------------------
+GITHUB
+------------------------------------------------------------------
+
+
+Push a project to github
+- First create new repository (tutorials) on github.com (It will give you url of this repository)
+
+YOU CAN ADD NICKNAME FOR githubUrlOfRepository
+- git remote add githubRepo https://github.com/sagargopale/tutorials.git
+- git remote
+
+- git push -u githubUrlOfRepository master  => It will ask your un/pw of gitub
+-----------------
+
+
+
+
+
+
+
+
+-------------------------------------------------
+Q. How to commit specific files?
