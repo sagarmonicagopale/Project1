@@ -119,3 +119,36 @@ If u want to take latest code of master branch
 If u have updated code from master repository then we need to add updated code into our github remote branch....
 - git push		// Hit this command from proj1Branch1 branch... Push local 
 -----------------------------------
+
+
+
+
+----------------------------
+PUSH BRANCH TO GITHUB
+- git checkout b1
+- git push origin b1        // To push b1 branch to Github
+OR
+- git push --set-upstream origin b1
+----------------------------
+CREATE BRANCH
+WAY 1.
+- git checkout master   // First go to the branch which you want to be base branch
+- git branch new_branch_name    // Create new branch
+
+WAY 2.
+- git branch new_branch_name base_branch_name
+
+WAY 3.
+- git checkout master
+- git checkout -b new_branch_name
+
+WAY 4.
+- git checkout -b new_branch_name base_branch_name
+----------------------------
+DELETE BRANCH :
+- git checkout master
+- git branch -d b1      // To delete local branch
+OR
+- git branch -D b1      // To delete local branch forcefully
+
+- git push origin -d b1     // To delete remote branch... First delete local branch
