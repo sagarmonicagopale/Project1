@@ -124,8 +124,11 @@ If u have updated code from master repository then we need to add updated code i
 
 
 ----------------------------
+PUSH BRANCH TO GITHUB
 - git checkout b1
 - git push origin b1        // To push b1 branch to Github
+OR
+- git push --set-upstream origin b1
 ----------------------------
 CREATE BRANCH
 WAY 1.
