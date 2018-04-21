@@ -92,3 +92,30 @@ YOU CAN ADD NICKNAME FOR githubUrlOfRepository
 
 -------------------------------------------------
 Q. How to commit specific files?
+
+
+
+-------------------------------------------------
+Adding new project to git repository first time
+- git init
+- git remote add origin https://github.com/sagarmonicagopale/Project1.git
+- git push -u origin master
+-------------------------------------------------
+- git branch proj1Branch1  // create new branch 'proj1Branch1' on local machine... this brach is copy of current directory path(master)
+- git branch  // Show list of local branch
+- git fetch  // Show list of remote branch
+- git checkout proj1Branch1  // Change branch from master to proj1Branch1
+- git push --set-upstream origin proj1Branch1  // Push proj1Branch1 code to GitHub proj1Branch1 branch and create proj1Branch1 branch on github
+---------------------------------
+add new file 'file4.txt' in local proj1Branch1 branch and commit it.
+If u want to push it to github remote repository
+- git push   //Hit this command from local proj1Branch1 branch... or Push local changes to remote repository
+OR We can use below command:
+- git push origin proj1Branch1
+---------------------------------
+If u want to take latest code of master branch
+- git pull origin master  // Hit this command from proj1Branch1 branch	
+-----------------------------------
+If u have updated code from master repository then we need to add updated code into our github remote branch....
+- git push		// Hit this command from proj1Branch1 branch... Push local 
+-----------------------------------
